@@ -1,0 +1,22 @@
+{
+  "name": "OpenSprinkler",
+  "version": "0.5",
+  "slug": "opensprinkler",
+  "description": "Run the OpenSprinkler Pi (OSPi) firmware on top of Hass.io",
+  "url": "https://github.com/stefanlaheij/hassio-addons/tree/master/OpenSprinkler",
+  "arch": [
+    "armhf"
+  ],
+  "startup": "services",
+  "webui": "http://[HOST]:[PORT:8080]/",
+  "boot": "auto",
+  "ports": {
+    "8080/tcp": 8080
+  },
+  "privileged": [
+    "SYS_RAWIO"
+  ],
+  "gpio": "yes",
+  "options": {},
+  "schema": {}
+}
