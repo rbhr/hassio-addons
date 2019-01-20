@@ -1,5 +1,4 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM as base-img
+FROM  i386/alpine as base-img
 
 ENV LANG C.UTF-8
 
@@ -10,7 +9,7 @@ RUN apk --no-cache add git  bash ca-certificates g++
 
 RUN git clone https://github.com/OpenSprinkler/OpenSprinkler-Firmware.git && \
     cd OpenSprinkler-Firmware && \
-    ./build.sh -s ospi
+    ./build.sh -s demo
 
 ########################################
 FROM base-img
