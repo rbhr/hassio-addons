@@ -1,0 +1,20 @@
+{
+  "name": "C-Gate",
+  "version": "2.11.4_3251",
+  "slug": "cgate",
+  "description": "Clipsal C-Gate",
+  "startup": "before",
+  "boot": "auto",
+  "schema": {},
+  "ports": {
+    "20023/tcp": 20023,
+    "20024/tcp": 20024,
+    "20025/tcp": 20025,
+    "20026/tcp": 20026
+  },
+  "options": {
+    "username": "admin",
+    "password": null
+  }
+}
+
