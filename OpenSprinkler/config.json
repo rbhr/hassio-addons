@@ -10,11 +10,10 @@
     "armhf"
   ],
   "startup": "services",
-  "webui": "http://[HOST]:[PORT:8081]/",
+  "webui": "http://[HOST]:[PORT:88]/",
   "boot": "auto",
   "ports": {
-    "8080/tcp": 8081,
-    "80/tcp": 8082
+    "80/tcp": 88
   },
   "privileged": [
     "SYS_RAWIO"

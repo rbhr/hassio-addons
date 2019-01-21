@@ -30,6 +30,6 @@ WORKDIR /OpenSprinkler
 VOLUME /data
 
 #-- OpenSprinkler interface is available on 8080
-EXPOSE 8080 80
+EXPOSE 80
 
 CMD [ "./OpenSprinkler" ]
