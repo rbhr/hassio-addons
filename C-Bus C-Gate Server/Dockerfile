@@ -11,7 +11,7 @@ RUN apk add --no-cache openjdk8-jre \
 RUN unzip /cgate-$CGATE_VERSION.zip \
   && rm cgate-$CGATE_VERSION.zip
 
-EXPOSE 20023 20024 20025 20026
+EXPOSE 20023 20024 20025 20026 20123
 
 # Copy data for add-on
 COPY run.sh /
